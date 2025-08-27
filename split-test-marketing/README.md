@@ -1,6 +1,8 @@
 
 # split-test-marketing
 
+<img align="center" width="250" height="150" src=./Images/a_bsplittesting.jpg>
+
 This project predicts and evaluates marketing split tests (copy × placement) and produces calibrated probability predictions for the target action.
 
 ## CLI
