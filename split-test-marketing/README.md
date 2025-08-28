@@ -5,9 +5,9 @@
 
 The goal of this project was two-fold.
 
-1. predict the probability of a user clicking the call to action button.
+1. **[CTR Predictions](./notebooks/ctr_predictions/)**: predict the probability of a user clicking the call to action button.
 
-2. Determine the ideal (ctaCopy x ctaPlacement) combination to maximize revenue.
+2. **[Segmentation and hypothesis testing](./notebooks/segmentation_hypothesis_testing/)**: Determine the ideal (ctaCopy x ctaPlacement) combination to maximize revenue.
 
 You can find the notebooks for each task in the [notebooks folder](./notebooks). 
 
@@ -60,6 +60,35 @@ Train.csv includes 100,000 rows of the original data with labels, test.csv conta
 | mortgageVariation | Mortgage product variation the user applied for to discuss during the appointment. This only is present when someone scheduled an appointment |
 | revenue | Revenue Financial Services received from the appointment scheduling and mortgage variation. If no scheduled appointment, this will be 0\. |
 
+
+## [CTR Predictions and Data Analysis](./notebooks/ctr_predictions/)
+Can be found in the following notebook: [ctr_predictions](./notebooks/ctr_predictions/ctr_predictions.ipynb)
+#### Part 1 Predictive Model Building
+
+Built a predictive model to make predictions on an unlabeled test set test.csv. The predictions are the probability of **ClickedCTA** Pr(ClickedCTA \= 1\) in \[0, 1\].  Evaluation metric given by the stakeholders is to minimize log loss.
+
+#### Part 2 Answering Questions
+
+Provided answers to several questions: 
+
+1. *What relevant key metrics are provided to evaluate the CTA combinations? And which CTA Copy and CTA Placement did best/worst based on the key metrics?*   
+2. *Which groups of people tend to be more correlated or less correlated with our key metrics?*  
+3. *What ways can you manipulate the columns/dataset to create features that increase predictive power towards our key metric?*  
+4. *Besides Log Loss, what other metrics will you use to evaluate the model's performance, and why?*
+
+#### Extra: 
+
+A few extra questions that were answered: 
+
+1. *What additional predictive model would you build to inform which CTA combinations would maximize the revenue in addition to predict ClickedCTA, and why?*   
+2. *If we called one of these CTA combinations our champion (serve it 100% of the time), how much incrementally is that worth to us vs. the average of the rest of the split test?* 
+
+
+
+## [User Segmentation and Hypothesis Testing](./notebooks/segmentation_hypothesis_testing/)
+Can be found in the following notebook: [ctr_predictions](./notebooks/segmentation_hypothesis_testing/segmentation_hypothesis_testing.ipynb)
+
+Determine the ideal (ctaCopy x ctaPlacement) combination to maximize revenue.
 
 ## CLI
 
