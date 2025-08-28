@@ -1,7 +1,7 @@
 
 # split-test-marketing
 
-<img align="center" width="250" height="150" src=./Images/a_bsplittesting.jpg>
+<img align="center" width="250" height="150" src=./Images/a-b-split.png>
 
 The goal of this project was two-fold.
 
@@ -62,6 +62,8 @@ Train.csv includes 100,000 rows of the original data with labels, test.csv conta
 
 
 ## [CTR Predictions and Data Analysis](./notebooks/ctr_predictions/)
+<img align="center" width="250" height="150" src=./Images/Examples-of-a-Call-to-Action.webp>
+
 Can be found in the following notebook: [ctr_predictions](./notebooks/ctr_predictions/ctr_predictions.ipynb)
 #### Part 1 Predictive Model Building
 
@@ -86,6 +88,8 @@ A few extra questions that were answered:
 
 
 ## [User Segmentation and Hypothesis Testing](./notebooks/segmentation_hypothesis_testing/)
+<img align="center" width="250" height="150" src=./Images/Market-Segmentation.png>
+
 Can be found in the following notebook: [ctr_predictions](./notebooks/segmentation_hypothesis_testing/segmentation_hypothesis_testing.ipynb)
 
 Determine the ideal (ctaCopy x ctaPlacement) combination to maximize revenue.
