@@ -1,7 +1,7 @@
 
 # split-test-marketing
 
-<img align="center" width="250" height="150" src=./Images/a-b-split.png>
+<img align="center" width="500" height="300" src=./Images/a-b-split.png>
 
 The goal of this project was two-fold.
 
@@ -22,11 +22,11 @@ There were two features that the team tested.
 
 **CTA Copy**
 
-<img align="center" width="300" height="250" src=./Images/ctaCopy.PNG>
+<img align="center" width="500" height="300" src=./Images/ctaCopy.PNG>
 
 **CTA Placement**
 
-<img align="center" width="250" height="150" src=./Images/ctaPlacement.PNG>
+<img align="center" width="300" height="200" src=./Images/ctaPlacement.PNG>
 
 
 The objective of this test was to learn which banner’s call-to-action (CTA) title copy and on-page placement combination will best entice visitors to click and enter the scheduling form in hope of increasing appointments and overall revenue. 
