@@ -10,8 +10,6 @@ pyyaml==6.0.2
 joblib==1.4.2
 
 
-
-mypy==0.701
 pytest==8.3.2
 pytest-watch==4.2.0
 mypy==1.10.0
