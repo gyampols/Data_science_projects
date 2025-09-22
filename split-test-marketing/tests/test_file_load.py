@@ -1,6 +1,6 @@
 import unittest 
 
-from src import train
+from DATA_SCIENCE_PROJECTS/split-test-marketing/src import train
 
 class TestModelMetrics(unittest.TestCase):
   def test_file_load(self):
