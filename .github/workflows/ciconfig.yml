@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Optional: set a default working directory if you used one in CircleCI.
+    # defaults:
+    #   run:
+    #     working-directory: ./
+
+    steps:
+      - name: Check out repo
+      - uses: actions/checkout@v4
+
+      # Match CircleCI's python 3.9.7.x image. (Note: 3.6 is EOL; consider 3.8+)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9.7'  
+
+      # Restore/create a cached virtualenv keyed on requirements.txt (like CircleCI save/restore_cache)
+      - name: Restore .venv from cache
+        id: venv-cache
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: v1-dependencies-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            v1-dependencies-${{ runner.os }}-
+
+      - name: Install dependencies (create venv if needed)
+        if: steps.venv-cache.outputs.cache-hit != 'true'
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # If the cache hit, the restored .venv already exists; still ensure it's usable
+      - name: Ensure deps installed (idempotent)
+        if: steps.venv-cache.outputs.cache-hit == 'true'
+        run: |
+          source .venv/bin/activate
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          source .venv/bin/activate
+          nosetests
+
+      - name: Run model training
+        run: |
+          source .venv/bin/activate
+          python src/train.py
