@@ -15,4 +15,6 @@ pytest-watch==4.2.0
 mypy==1.10.0
 pylint==3.2.5
 rope==1.13.0
-# (nose/rednose dropped)
+
+#black for formatting
+black==24.4.2
