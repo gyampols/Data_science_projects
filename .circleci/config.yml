@@ -3,7 +3,7 @@
 jobs:
   build:
     docker:
-      - image: circleci/python:3.14.0
+      - image: circleci/python:3.14.0-slim
 
     working_directory: ~/repo
 
