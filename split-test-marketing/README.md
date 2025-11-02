@@ -64,7 +64,7 @@ Train.csv includes 100,000 rows of the original data with labels, test.csv conta
 ## [CTR Predictions and Data Analysis](./notebooks/ctr_predictions/)
 <img align="center" width="250" height="150" src=./Images/Examples-of-a-Call-to-Action.webp>
 
-Can be found in the following notebook: [ctr_predictions](./notebooks/ctr_predictions/ctr_predictions.ipynb)
+Can be found in the following notebook: [EDA_&_model_eval](./notebooks/ctr_predictions/EDA_&_model_eval.ipynb)
 #### Part 1 Predictive Model Building
 
 Built a predictive model to make predictions on an unlabeled test set test.csv. The predictions are the probability of **ClickedCTA** Pr(ClickedCTA \= 1\) in \[0, 1\].  Evaluation metric given by the stakeholders is to minimize log loss.
