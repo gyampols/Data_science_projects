@@ -1,5 +1,5 @@
 ## CTR Predictions and Data Analysis
-Can be found in the following notebook: [EDA_&_model_eval](./notebooks/ctr_predictions/EDA_&_model_eval.ipynb) found in the notebooks folder
+Can be found in the following notebook: [EDA_&_model_eval](./EDA_&_model_eval.ipynb) found in the notebooks folder
 #### Part 1 Predictive Model Building
 
 Built a predictive model to make predictions on an unlabeled test set test.csv. The predictions are the probability of **ClickedCTA** Pr(ClickedCTA \= 1\) in \[0, 1\].  Evaluation metric given by the stakeholders is to minimize log loss.
