@@ -1,4 +1,4 @@
-
+#imports
 import time
 
 # Third-party
@@ -25,7 +25,7 @@ from sklearn.calibration import CalibratedClassifierCV
 from category_encoders import TargetEncoder
 
 
-
+#speicified columns for transformations
 id_col = "userId"
 target_col = "clickedCTA"  # as specified in the case
 numeric_features = ["estimatedAnnualIncome", "visitCount", "scrollDepth"]
@@ -35,6 +35,7 @@ text_features = ['pageURL','editorialSnippet']
 
 
 def _date_to_dow_2d(X):
+    '''convert date to day of the week'''
     s = pd.Series(np.asarray(X).ravel(), dtype="string").str.strip()
     s = s.replace("", pd.NA)  # treat empty as missing
     dt = pd.to_datetime(s, format="%m/%d/%y", errors="coerce")
@@ -43,6 +44,10 @@ def _date_to_dow_2d(X):
 
 
 def preprocessing(df):# Identify columns
+    '''function for preprocesing columns
+            input: pandas Dataframe
+            output: preprocessor(sklearn.ColumnTranformer), feature_cols[list] 
+    '''
     all_cols = df.columns.tolist()
     post_click_cols = ["submittedform","scheduledappointment","mortgagevariation","revenue"]
 
@@ -89,6 +94,10 @@ def preprocessing(df):# Identify columns
     return preprocessor, feature_cols
 
 def train_model(df):
+    '''function for preprocesing and training model
+            input: pandas Dataframe
+            output: best_model(CalibratedClassifierCV) 
+    '''
     #models to compare and their hyperparameters to tune
     model_name = "neural net (MLP)"
     model_params={"model": Pipeline([

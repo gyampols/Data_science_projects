@@ -1,5 +1,5 @@
 
-# split-test-marketing
+# SplitTestMarketing
 
 <img align="center" width="500" height="300" src=./Images/a-b-split.png>
 
@@ -98,7 +98,7 @@ Determine the ideal (ctaCopy x ctaPlacement) combination to maximize revenue.
 
 ```bash
 # Train
-cd "split-test-marketing"
+cd "SplitTestMarketing"
 python -m src.train --train_csv data/raw/train.csv --out_model models/model.joblib --target target --id_col userId
 
 # Predict

@@ -10,7 +10,7 @@ Hi and welcome to my GitHub portfolio for personal data science projects. Each p
 - Graduate of Stevens Institute of Technology with distinction (3.91 GPA).
 
 ## Projects
-<img align="left" width="250" height="150" src=./Images/a_bsplittesting.jpg> **[split-test-marketing](./split-test-marketing)**
+<img align="left" width="250" height="150" src=./Images/a_bsplittesting.jpg> **[SplitTestMarketing](./SplitTestMarketing)**
 
  A website that offers online tools to connect home-buyers with mortgage lenders has done a split test on different call to action button copies and placements.  The goal of this project was two-fold.  1. predict the probability of a user clicking the call to action button. 2. Determine the ideal copy and placement combination to maximize revenue.
 
