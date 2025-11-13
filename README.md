@@ -13,11 +13,13 @@ Hi and welcome to my GitHub portfolio for personal data science projects. Each p
 <img align="left" width="250" height="150" src=./Images/a_bsplittesting.jpg> **[SplitTestMarketing](./SplitTestMarketing)**
 
 Skills: Classification, A/B Testing, Clustering
+
  A website that offers online tools to connect home-buyers with mortgage lenders has done a split test on different call to action button copies and placements.  The goal of this project was two-fold.  1. predict the probability of a user clicking the call to action button. 2. Determine the ideal copy and placement combination to maximize revenue.
 
  <img align="left" width="250" height="150" src=./Images/rent-estimate.png> **[Rent Price Prediction](https://github.com/gyampols/RentEstimateProject/tree/main)**
 
 Skills: Regression, shapley values, feature importance, web scraping
+
 The company wants a Python model that estimates market rent for single-family homes across the U.S. using basic property info and location. They gave two files: one to train on (with past rented prices over the last two years) and one to test on. Train a model on the provided historical data (TrainingSet.csv) using: Latitude, Longitude Bedrooms, Bathrooms Square Feet Year Built Plus the target: Close Price (i.e. the rent it actually leased for) Use that model to predict a “Market Rent” for new properties (like the ones in TestSet.csv or any similar dataframe). Deliver a function that takes a pandas DataFrame with those columns and returns the same DF with an extra Market Rent column. 
 
  ## Mini Projects
