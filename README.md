@@ -18,7 +18,7 @@ Skills: Classification, A/B Testing, Clustering
 
  <img align="left" width="250" height="150" src=./Images/rent-estimate.png> **[Rent Price Prediction](https://github.com/gyampols/RentEstimateProject/tree/main)**
 
-Skills: Regression, shapley values, feature importance, web scraping
+Skills: Regression, shapley values, feature importance, web scraping, Geospatial data
 
 The company wants a Python model that estimates market rent for single-family homes across the U.S. using basic property info and location. They gave two files: one to train on (with past rented prices over the last two years) and one to test on. Train a model on the provided historical data (TrainingSet.csv) using: Latitude, Longitude Bedrooms, Bathrooms Square Feet Year Built Plus the target: Close Price (i.e. the rent it actually leased for) Use that model to predict a “Market Rent” for new properties (like the ones in TestSet.csv or any similar dataframe). Deliver a function that takes a pandas DataFrame with those columns and returns the same DF with an extra Market Rent column. 
 
