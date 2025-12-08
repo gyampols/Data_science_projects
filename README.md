@@ -22,11 +22,11 @@ Skills: Regression, shapley values, feature importance, web scraping, Geospatial
 
 The company wants a Python model that estimates market rent for single-family homes across the U.S. using basic property info and location. They gave two files: one to train on (with past rented prices over the last two years) and one to test on. Train a model on the provided historical data (TrainingSet.csv) using: Latitude, Longitude Bedrooms, Bathrooms Square Feet Year Built Plus the target: Close Price (i.e. the rent it actually leased for) Use that model to predict a “Market Rent” for new properties (like the ones in TestSet.csv or any similar dataframe). Deliver a function that takes a pandas DataFrame with those columns and returns the same DF with an extra Market Rent column. 
 
- <img align="left" width="250" height="150" src=./Images/rent-estimate.png> **[Ai Activity Planner](https://github.com/gyampols/Ai-Activity-Planner/tree/main)**
+ <img align="left" width="200" height="200" src=./Images/FitnessScheduleIcon.png> **[Ai Activity Planner](https://github.com/gyampols/Ai-Activity-Planner/tree/main)**
 
-Skills: html, java, api calls
+Skills: html, java, api calls, Flask, GCP, SQL, Docker
 
-Ai tool to halp you plan your activities with the weather.
+AI Activity Planner helps you maintain a balanced and active lifestyle by intelligently scheduling your favorite activities throughout the week. Whether you're into running, yoga, swimming, or any other activity, our AI-powered system creates personalized plans that consider your preferences, fitness levels, and schedule constraints.
 
  ## Mini Projects
 - - **[basic-regression](./basic-regression)**
