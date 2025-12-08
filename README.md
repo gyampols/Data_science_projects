@@ -28,6 +28,8 @@ Skills: html, java, api calls, Flask, GCP, SQL, Docker
 
 AI Activity Planner helps you maintain a balanced and active lifestyle by intelligently scheduling your favorite activities throughout the week. Whether you're into running, yoga, swimming, or any other activity, our AI-powered system creates personalized plans that consider your preferences, fitness levels, and schedule constraints.
 
+link to the site: https://ai-activity-planner-300000255718.us-central1.run.app
+
  ## Mini Projects
 - - **[basic-regression](./basic-regression)**
 
